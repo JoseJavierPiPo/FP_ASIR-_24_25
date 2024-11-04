@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio5</title>
+</head>
+<body>
+    <header>
+       <center><h1>GAME PLAY Thresh en 15 segundos</h1></center>
+    </header>
+
+    <main>  
+        
+        <video id="video" width="900" poster="thres.png">
+            <source src="Thresh en 15 segundos.mp4">
+            <source src="media/flamencos.ogg">
+        </video>
+
+        <p><audio autoplay controls>
+            <source src="Thresh en 15 segundos.mp3" >
+            <source src="media/tormenta.ogg" >
+        </audio></p>
+
+        <script>
+            let video = document.getElementById("video");
+            video.onclick = function () {
+            if (!video.paused && !video.ended) {
+            video.pause();
+            } else {
+            video.play();
+            }
+            }
+        </script>
+
+        <ul>
+            <li><img width="600px" src="https://starkcrashnews.weebly.com/uploads/8/2/8/9/82898754/fiora-splash-5_1.jpg?649"></li>
+            </ul>
+            </li>
+        </ul>
+            
+    </main>
+</body>
+</html>
