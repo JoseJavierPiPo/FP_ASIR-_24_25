@@ -1,0 +1,40 @@
+body { 
+    
+    background-color: powderblue;
+    background-size: cover; 
+    background-position: center; 
+    margin: 0;
+    font-family: Arial, sans-serif; 
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: blue;
+    font-size: large;
+    font-size: 2em; 
+}
+h2 {
+    color:blueviolet;
+}
+h3{
+    color: cornflowerblue;
+}
+p {
+    color: red;
+    font-size: 1.1em; 
+    line-height: 1.5; 
+}
+section{
+background-image: url(https://imgs.search.brave.com/ovX6txLOuvicW57op3LSUI4wTrqgWsT2YUi7AR4GOAE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZW5lcy4yMG1pbnV0/b3MuZXMvZmlsZXMv/aW1hZ2VfNjQwXzM2/MC91cGxvYWRzL2lt/YWdlbmVzLzIwMjMv/MDgvMDEvZWwtc3Rl/YW1lci1lbHhva2Fz/LWVuLXN1LXVsdGlt/by1kaXJlY3RvLnBu/Zw);
+width: 70%;
+margin: 45px auto;
+padding-top: 25%;
+padding: 3em;
+position: relative;
+transform:rotate(-45deg);
+-webkit-transform:rotate(-25deg);
+-moz-transform:rotate(-35deg);
+-ms-transform:rotate(-35deg);
+-o-transform:rotate(-45deg);
+}

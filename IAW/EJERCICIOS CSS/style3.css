@@ -1,0 +1,12 @@
+h1{
+    background-color:rgb(72, 177, 238, 50%);
+    color:rgb(100%, 70%, 25%);
+    text-align: center;
+}
+
+h2{
+    background-color:hsla(263, 73%, 53%, 0.5);
+    color:hsl(120, 40%, 76%);    
+    text-align: center;
+}
+
