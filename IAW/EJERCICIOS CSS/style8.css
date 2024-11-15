@@ -1,0 +1,38 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div {
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.rotacion {
+    background-color: #4CAF50;
+    transform: rotate(30deg);
+}
+
+.scale {
+    background-color: #2196F3;
+    transform: scale(1.5);
+}
+
+.skew {
+    background-color: #FF9800;
+    transform: skew(-20deg, 10deg);
+}
+
+.translate {
+    background-color: #E91E63;
+    transform: translate(50px, 20px);
+}
