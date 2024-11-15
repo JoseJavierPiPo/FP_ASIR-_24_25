@@ -1,0 +1,16 @@
+main {
+    background-image:url(https://wallpapers.com/images/featured/pc-gaming-zvbj1ryoiptz09af.jpg),url(https://imgs.search.brave.com/eMYjNED8nthmD_Eblkv-xnhjiAQhjzDXgRoNBGw0RTo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTIy/MjA0NDAzL2VzL2Zv/dG8vYyVDMyVCM2Rp/Z28tYmluYXJpby5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/ZnpLRHJseG1pSWhj/TzNXT3puNEJBdV9I/RV81VTludTJfclZ6/T2NlU0tTST0);
+    background-size: 500px, cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    margin: 0;   
+}
+
+h1 {
+    background-image: url(https://imgs.search.brave.com/Te7XuuiJYk2redT4WxT-meUnRQE6WuXtYRebfub0VRA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTMz/NjI3MTc1OC9lcy9m/b3RvL3Byb2dyYW1h/Y2klQzMlQjNuLWRl/LWMlQzMlQjNkaWdv/LWZ1ZW50ZS1lbi1w/YW50YWxsYS1kaWdp/dGFsLWRlc2Fycm9s/bGFkb3ItZGUtc29m/dHdhcmUteS1sZW5n/dWFqZS1odG1sLWRl/LndlYnA_YT0xJmI9/MSZzPTYxMng2MTIm/dz0wJms9MjAmYz1M/UEVBTkJTY1pVeERo/amFYeTdRS1ZoSy1n/VnJMMDFEUTZzbFp0/Y0QxMlpvPQ);
+    background-position: center;
+    text-align: center;
+    color: blueviolet;
+}
