@@ -16,12 +16,17 @@
         if($numero %2 == 0){
             
             echo "El $numero es par <br>";
+
         }
 
         else{
             echo "El $numero es impar <br>"; 
         }
 
+        
+        for ($i = 1; $i < $numero; $i += 2 ) {
+            echo $i . "<br>";
+        }
         
         ?>
     </body>

@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>EJERCICIO 13</title>
     </head>
-        <form>
+        <form method="get">
             <input type="number" name="euro" placeholder="Introduce el dinero €">
             <button type="submit">Conversor a dolares</button>
         </form><br>

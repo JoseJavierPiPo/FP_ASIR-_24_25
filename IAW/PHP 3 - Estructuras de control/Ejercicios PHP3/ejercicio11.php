@@ -18,7 +18,7 @@
                 $variable0 = $variable0.$i. "²";
             }
             else{
-                $variable0 = $variable0.$i . "² + *";
+                $variable0 = $variable0.$i . "² + ";
 
             }
         }
