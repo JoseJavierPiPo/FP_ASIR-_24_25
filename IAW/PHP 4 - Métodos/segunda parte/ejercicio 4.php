@@ -7,7 +7,7 @@
 </head>
 <fieldset>
             <form method="get">
-                <center><b>CUAL DE LAS DISTINTAS FIGURAS GEOMÉTRICAS QUIERES CALCULAR SU ÁREA</b><br></center>
+                <center><b>CALCULADORA</b><br></center>
                 <br><br>
                 <center>
                     <select name="Operaciones">
@@ -28,101 +28,45 @@
     // 4. Crea un programa que reciba dos números y un código de operación y permita 
     // calcular las operaciones básicas (suma, resta, multiplicación y división) entre estos 
     // dos números.
-
+    include_once 'ejercicio 4 .1.php';
+    //aquí está el problema :D
     $Operaciones = floatval($_GET['Operaciones'] ?? 0);
     switch($Operaciones){
 
         case 1: 
-            echo "Has seleccionado realizar la suma de dos números";
-
-            echo '
-                        <form method="get">
-                            <input type="float" name="numero1" placeholder="Introduce el valor">
-                            <input type="float" name="numero2" placeholder="Introduce el valor">
-                            <button type="submit">Enviar Valores</button>
-                        </form>';
-                        $numero1 = $_GET['numero1'] ?? 0;
-                        $numero2 = $_GET['numero2'] ?? 0;
-                        if (isset($_GET['numero1']) && isset($_GET['numero2'])) {
-                            $numero1 = floatval($_GET['numero1']);
-                            $numero2 = floatval($_GET['numero2']);
-                            function suma($numero1, $numero2) {
-                                return $numero1 + $numero2;
-                            }
-                            $resultado = suma($numero1, $numero2);
-                            echo "El resultado de la suma es = $resultado"
-                        };
-            
-        break; 
-
-        case 2:
-            echo "Has seleccionado realizar la resta de dos números";
-
-            echo '
-                        <form method="get">
-                            <input type="float" name="numero1" placeholder="Introduce el valor">
-                            <input type="float" name="numero2" placeholder="Introduce el valor">
-                            <button type="submit">Enviar Valores</button>
-                        </form>';
-                        $numero1 = $_GET['numero1'] ?? 0;
-                        $numero2 = $_GET['numero2'] ?? 0;
-                        function resta($numero1, $numero2){
-                            return $numero1 - $numero2;
-                        }
-                        if (isset($_GET['numero1']) && isset($_GET['numero2'])) {
-                            $numero1 = floatval($_GET['numero1']);
-                            $numero2 = floatval($_GET['numero2']);
-                            $resultado = resta($numero1, $numero2);
-                            echo "El resultado de la resta es = $resultado";
-                        };
-
+            pedirvalores();
+            $resultado1 = suma();
+  
         break;
-        case 3:
-            echo "Has seleccionado realizar la multiplicación de dos números";
 
-            echo '
-                        <form method="get">
-                            <input type="float" name="numero1" placeholder="Introduce el valor">
-                            <input type="float" name="numero2" placeholder="Introduce el valor">
-                            <button type="submit">Enviar Valores</button>
-                        </form>';
-                        $numero1 = $_GET['numero1'] ?? 0;
-                        $numero2 = $_GET['numero2'] ?? 0;
-                        function mul($numero1, $numero2){
-                            return $numero1 * $numero2;
-                        }
-                        if (isset($_GET['numero1']) && isset($_GET['numero2'])) {
-                            $numero1 = floatval($_GET['numero1']);
-                            $numero2 = floatval($_GET['numero2']);
-                            $resultado = mul($numero1, $numero2);
-                            echo "El resultado de la multiplicación es = $resultado";
-                        };
+        
+
+        case 2: 
+            echo pedirvalores($num1, $num2);
+            echo resta($num1,$num2);
+            $resultado2 = resta($num1,$num2);
+            echo $resultado2;
         break;
+
+        case 3: 
+            echo pedirvalores($num1, $num2);
+            echo mul($num1,$num2);
+            $resultado3 = mul($num1,$num2);
+            echo $resultado3;
+        break;
+
         case 4:
-            echo "Has seleccionado realizar la división de dos números";
-
-            echo '
-                        <form method="get">
-                            <input type="float" name="numero1" placeholder="Introduce el valor">
-                            <input type="float" name="numero2" placeholder="Introduce el valor">
-                            <button type="submit">Enviar Valores</button>
-                        </form>';
-                        $numero1 = $_GET['numero1'] ?? 0;
-                        $numero2 = $_GET['numero2'] ?? 0;
-                        function div($numero1, $numero2){
-                            return $numero1 / $numero2;
-                        }
-
-                        if (isset($_GET['numero1']) && isset($_GET['numero2'])) {
-                            $numero1 = floatval($_GET['numero1']);
-                            $numero2 = floatval($_GET['numero2']);
-                            $resultado = div($numero1, $numero2);
-                            echo "El resultado de la división es = $resultado";
-                        };
-                    
+            echo pedirvalores($num1, $num2);
+            echo div($num1,$num2);
+            $resultado4 = div($num1,$num2);
+            echo $resultado4;
         break;
+        default:
+        echo "Vamos si entra quí porque no le da tiempo a hacer ";
+        break;     
     }
-
+    echo $resultado1; 
+ 
     
 ?>  
 </body>
